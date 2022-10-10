@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icons {
+    @apply bg-gray-200 text-gray-700 rounded-full text-base  w-[25px]  h-[25px] p-[5px] cursor-pointer shadow-md hover:shadow-lg;
+  }
+  .iconss {
+    @apply rounded-full text-base  w-[25px]  h-[25px] p-[5px] cursor-pointer shadow-md hover:shadow-lg;
+  }
+}
+
+/* Conversations */
+
+.wrapper {
+  height: calc(100% - 110px);
+  /* overflow-y: auto; */
+}
+
+/* chat */
+
+.right {
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.rightcorners {
+  background-color: #2f447f;
+  color: aliceblue;
+  border-radius: 5px 0px 5px 5px;
+}
