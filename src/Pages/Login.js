@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../Firebase";
+import { DiGithubBadge } from "react-icons/di";
 
 function Login() {
   const navigate = useNavigate();
@@ -48,6 +49,13 @@ function Login() {
             <u>Sign up</u>
           </Link>
         </p>
+
+        <div className='h-full w-full flex items-center justify-center gap-2'>
+          <h1 className='text-center'>created by Esaia</h1>
+          <a href='https://github.com/esaia/Chat_App' target='_blank'>
+            <DiGithubBadge />
+          </a>
+        </div>
         {error && (
           <p className='text-sm text-center  text-red-500'>
             Something went wront

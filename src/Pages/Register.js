@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from "../Firebase";
 import { doc, setDoc } from "firebase/firestore";
+import { DiGithubBadge } from "react-icons/di";
 
 const Register = () => {
   const [error, seterror] = useState(false);
@@ -104,6 +105,12 @@ const Register = () => {
               Something went wront
             </p>
           )}
+          <div className='h-full w-full flex items-center justify-center gap-2'>
+            <h1 className='text-center'>created by Esaia</h1>
+            <a href='https://github.com/esaia/Chat_App' target='_blank'>
+              <DiGithubBadge />
+            </a>
+          </div>
         </form>
       ) : (
         <div className='w-[200px] h-[200px] flex justify-center items-center text-white text-xl font-bold animate-bounce rounded-lg bg-red-400'>
